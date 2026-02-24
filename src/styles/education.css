@@ -1,0 +1,134 @@
+/* Page */
+.edu-section{
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  background: #ffffff; /* oq fon */
+}
+
+.edu-page{
+  padding-top: 28px;
+  padding-bottom: 48px;
+}
+
+/* Title */
+.edu-title{
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: -0.6px;
+  color: #0f172a;
+}
+
+.edu-subtitle{
+  margin: 10px 0 22px;
+  max-width: 640px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+/* Card wrapper */
+.edu-card{
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(15,23,42,0.06);
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(15,23,42,0.08);
+  overflow: hidden;
+}
+
+/* Row */
+.edu-row{
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 18px;
+  padding: 18px;
+  border-bottom: 1px solid rgba(15,23,42,0.06);
+}
+
+.edu-row:last-child{
+  border-bottom: none;
+}
+
+/* Left */
+.edu-left{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2px;
+}
+
+.edu-logo-wrap{
+  width: 112px;
+  height: 112px;
+  border-radius: 16px;
+  background: rgba(79,70,229,0.08);
+  border: 1px solid rgba(79,70,229,0.14);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.edu-logo{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Right */
+.edu-head{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.edu-item-title{
+  margin: 0;
+  font-weight: 900;
+  color: #0f172a;
+  font-size: 18px;
+}
+
+.edu-year{
+  font-size: 13px;
+  font-weight: 700;
+  color: #4f46e5;
+  background: rgba(79,70,229,0.10);
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.edu-desc{
+  margin: 10px 0 0;
+  color: #475569;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+/* Hover (yengil) */
+.edu-row:hover{
+  background: rgba(2, 6, 23, 0.02);
+}
+
+/* Mobile */
+@media (max-width: 576px){
+  .edu-row{
+    grid-template-columns: 72px 1fr;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .edu-logo-wrap{
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+  }
+
+  .edu-logo{
+    width: 36px;
+    height: 36px;
+  }
+
+  .edu-title{
+    font-size: 34px;
+  }
+}
