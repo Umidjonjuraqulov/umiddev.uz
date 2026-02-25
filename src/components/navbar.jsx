@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next"; // 👈 i18n hookini import qilamiz
 import "../styles/navbar.css";
 
 const Navbar = () => {
   const { pathname } = useLocation();
+  const { t, i18n } = useTranslation(); // 👈 t (tarjima) va i18n (funksiya) ni olamiz
 
   const active = (p) => (pathname === p ? "nav-active" : "");
 
@@ -12,10 +14,8 @@ const Navbar = () => {
     return localStorage.getItem("theme") === "dark";
   });
 
-  // 🌍 Language state
-  const [lang, setLang] = useState(() => {
-    return localStorage.getItem("lang") || "en";
-  });
+  // 🌍 Language state - i18n dagi joriy tilni olamiz
+  const [lang, setLang] = useState(i18n.language || "uz");
 
   // Dark mode apply
   useEffect(() => {
@@ -28,10 +28,12 @@ const Navbar = () => {
     }
   }, [dark]);
 
-  // Language save
-  useEffect(() => {
-    localStorage.setItem("lang", lang);
-  }, [lang]);
+  // 🌍 Til o'zgarganda i18next-ni ham yangilash
+  const handleLangChange = (e) => {
+    const selectedLang = e.target.value;
+    setLang(selectedLang);
+    i18n.changeLanguage(selectedLang); // 👈 Haqiqiy tilni almashtiruvchi buyruq
+  };
 
   return (
     <nav className="navbar-custom">
@@ -44,24 +46,28 @@ const Navbar = () => {
 
         {/* Links */}
         <div className="nav-links">
-
+          {/* t("about.title") kabi kalitlar ishlatiladi */}
           <Link className={`nav-item ${active("/")}`} to="/">
-            Education
+             {t("nav.about")} 
+          </Link>
+
+          <Link className={`nav-item ${active("/education")}`} to="/education">
+             {t("nav.education")}
           </Link>
 
           <Link className={`nav-item ${active("/certificates")}`} to="/certificates">
-            Certificates
+             {t("nav.certificates")}
           </Link>
 
           <Link className={`nav-item ${active("/work")}`} to="/work">
-            Work
+             {t("nav.work")}
           </Link>
 
           {/* 🌍 Language selector */}
           <select
             className="nav-lang"
             value={lang}
-            onChange={(e) => setLang(e.target.value)}
+            onChange={handleLangChange} // 👈 Yangi funksiyani ulaymiz
           >
             <option value="uz">UZ</option>
             <option value="en">EN</option>
@@ -75,9 +81,7 @@ const Navbar = () => {
           >
             {dark ? "☀️" : "🌙"}
           </button>
-
         </div>
-
       </div>
     </nav>
   );

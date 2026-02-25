@@ -1,0 +1,86 @@
+{
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know more about me, my background, and skills.",
+    "name": "Umidjon Juraqulov",
+    "desc1": "I am a software developer focused on building modern web applications using React, FastAPI, and AI technologies.",
+    "desc2": "My goal is to combine software engineering with AI and business to create innovative digital products.",
+    "exp": "Years Experience",
+    "projects": "Projects",
+    "tech": "Technologies",
+    "download": "Download Resume"
+  },
+
+  "nav": {
+  "about": "About me",
+  "education": "Education",
+  "certificates": "Certificates",
+  "work": "Work"
+},
+"education": {
+    "title": "Education",
+    "subtitle": "Academic background and key achievements.",
+    "items": [
+      {
+        "title": "Secondary School",
+        "year": "2019",
+        "desc": "Focused on Mathematics with strong performance."
+      },
+      {
+        "title": "College in Samarkand",
+        "year": "2019 — 2021",
+        "desc": "Graduated with top marks."
+      },
+      {
+        "title": "Samarkand State Pedagogical Institute",
+        "year": "2021 — 2025",
+        "desc": "Working on informatics and software development."
+      }
+    ]
+  },
+  "certificates": {
+    "title": "My Certifications",
+    "subtitle": "Verified achievements in development and AI",
+    "items": [
+      {
+        "title": "Python Specialization",
+        "platform": "Coursera",
+        "year": "2022"
+      },
+      {
+        "title": "Django Framework",
+        "platform": "Udemy",
+        "year": "2023"
+      },
+      {
+        "title": "AI Foundations",
+        "platform": "Google",
+        "year": "2024"
+      }
+    ]
+  },
+  "work": {
+    "title": "Work Experience",
+    "subtitle": "Professional experience and projects.",
+    "items": [
+      {
+        "role": "Frontend Developer",
+        "period": "2023 — Present",
+        "desc": "Building responsive web applications using React and modern UI frameworks.",
+        "tags": ["React", "UI", "Responsive", "SPA"]
+      },
+      {
+        "role": "Backend Developer",
+        "period": "2022 — 2023",
+        "desc": "Developed REST APIs and integrated databases for production systems.",
+        "tags": ["REST API", "DB", "Auth", "Performance"]
+      },
+      {
+        "role": "AI & Blockchain Enthusiast",
+        "period": "2024 — Present",
+        "desc": "Exploring smart contracts, Web3 technologies and AI integration.",
+        "tags": ["Web3", "Smart Contracts", "AI", "Research"]
+      }
+    ]
+  }
+}

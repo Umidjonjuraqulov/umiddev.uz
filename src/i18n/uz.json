@@ -1,0 +1,85 @@
+{
+  "about": {
+    "title": "Men haqimda",
+    "subtitle": "Men, mening o'tmishim va ko'nikmalarim haqida ko'proq biling.",
+    "name": "Umidjon Juraqulov",
+    "desc1": "Men React, FastAPI va AI texnologiyalaridan foydalangan holda zamonaviy veb-ilovalarni yaratishga e'tibor qaratgan dasturchiman.",
+    "desc2": "Mening maqsadim dasturiy muhandislikni AI va biznes bilan birlashtirib, innovatsion mahsulotlar yaratish.",
+    "exp": "Yillik tajriba",
+    "projects": "Loyihalar",
+    "tech": "Texnologiyalar",
+    "download": "Rezyumeni yuklab olish"
+  },
+"nav": {
+  "about": "Men haqimda",
+  "education": "Ta'lim",
+  "certificates": "Sertifikatlar",
+  "work": "Tajriba"
+  },
+  "education": {
+    "title": "Ta'lim",
+    "subtitle": "Akademik o'tmish va asosiy yutuqlar.",
+    "items": [
+      {
+        "title": "18-umumiy o'rta ta'lim maktabi",
+        "year": "2019",
+        "desc": "Matematika faniga ixtisoslashgan va yuqori natijalar."
+      },
+      {
+        "title": "Samarqand akademik litseyi",
+        "year": "2019 — 2021",
+        "desc": "A'lo baholar bilan tamomlangan."
+      },
+      {
+        "title": "Samarqand davlat pedagogika instituti",
+        "year": "2021 — 2025",
+        "desc": "Informatika va dasturiy ta'minotni ishlab chiqish yo'nalishi."
+      }
+    ]
+  },
+  "certificates": {
+    "title": "Mening sertifikatlarim",
+    "subtitle": "Dasturlash va AI yo'nalishidagi tasdiqlangan yutuqlar",
+    "items": [
+      {
+        "title": "Python ixtisoslashuvi",
+        "platform": "Coursera",
+        "year": "2022"
+      },
+      {
+        "title": "Django Framework",
+        "platform": "Udemy",
+        "year": "2023"
+      },
+      {
+        "title": "AI asoslari",
+        "platform": "Google",
+        "year": "2024"
+      }
+    ]
+  },
+  "work": {
+    "title": "Ish tajribasi",
+    "subtitle": "Professional tajriba va loyihalar.",
+    "items": [
+      {
+        "role": "Frontend dasturchi",
+        "period": "2023 — Hozirgi vaqtgacha",
+        "desc": "React va zamonaviy UI freymvorklari yordamida moslashuvchan veb-ilovalarni yaratish.",
+        "tags": ["React", "UI", "Moslashuvchan", "SPA"]
+      },
+      {
+        "role": "Backend dasturchi",
+        "period": "2022 — 2023",
+        "desc": "REST API-larni ishlab chiqish va ma'lumotlar bazalarini ishlab chiqarish tizimlariga integratsiya qilish.",
+        "tags": ["REST API", "Bazalar", "Auth", "Samaradorlik"]
+      },
+      {
+        "role": "AI va Blockchain ishqibozi",
+        "period": "2024 — Hozirgi vaqtgacha",
+        "desc": "Smart-kontraktlar, Web3 texnologiyalari va AI integratsiyasini o'rganish.",
+        "tags": ["Web3", "Smart Contracts", "AI", "Tadqiqot"]
+      }
+    ]
+  }
+}

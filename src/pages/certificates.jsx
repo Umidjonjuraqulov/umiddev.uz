@@ -1,32 +1,19 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next"; // 👈 Hookni import qilish
 import cert1 from "../assets/hackerrank.PNG";
 import cert2 from "../assets/kopirayting.png";
 import cert3 from "../assets/umid42.png";
 import "../styles/cert.css";
 
-const certificates = [
-  {
-    title: "Python Specialization",
-    platform: "Coursera",
-    year: "2022",
-    image: cert1,
-  },
-  {
-    title: "Django Framework",
-    platform: "Udemy",
-    year: "2023",
-    image: cert2,
-  },
-  {
-    title: "AI Foundations",
-    platform: "Google",
-    year: "2024",
-    image: cert3,
-  },
-];
-
 const Certificates = () => {
+  const { t } = useTranslation();
   const [selected, setSelected] = useState(null);
+
+  // Rasmlarni massivga tartib bilan joylashtiramiz
+  const certImages = [cert1, cert2, cert3];
+
+  // JSON dan obyektlar massivini olamiz
+  const certItems = t("certificates.items", { returnObjects: true });
 
   const openModal = (img) => setSelected(img);
   const closeModal = () => setSelected(null);
@@ -35,27 +22,31 @@ const Certificates = () => {
     <section className="cert-section py-5">
       <div className="site-container cert-page">
         <div className="text-center mb-5">
-          <h1 className="fw-bold cert-title">My Certifications</h1>
+          <h1 className="fw-bold cert-title">{t("certificates.title")}</h1>
           <p className="text-muted cert-subtitle">
-            Verified achievements in development and AI
+            {t("certificates.subtitle")}
           </p>
         </div>
 
-        {/* GRID (3 columns on desktop) */}
+        {/* GRID */}
         <div className="cert-grid">
-          {certificates.map((cert, index) => (
+          {Array.isArray(certItems) && certItems.map((cert, index) => (
             <div key={index}>
               <div
                 className="cert-card"
                 role="button"
                 tabIndex={0}
-                onClick={() => openModal(cert.image)}
+                onClick={() => openModal(certImages[index])}
                 onKeyDown={(e) => {
-                  if (e.key === "Enter") openModal(cert.image);
+                  if (e.key === "Enter") openModal(certImages[index]);
                 }}
               >
                 <div className="cert-img-wrap">
-                  <img src={cert.image} className="cert-img" alt={cert.title} />
+                  <img 
+                    src={certImages[index]} 
+                    className="cert-img" 
+                    alt={cert.title} 
+                  />
                 </div>
 
                 <div className="cert-body">
