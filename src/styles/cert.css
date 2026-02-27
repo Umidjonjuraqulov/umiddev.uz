@@ -1,7 +1,7 @@
 /* ====== PAGE LAYOUT (navbar bilan bir xil) ====== */
 .site-container{
   width: 100%;
-  max-width: 1100px;     /* ✅ navbar kabi ensiz */
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -9,7 +9,7 @@
 .cert-section{
   width: 100%;
   min-height: calc(100vh - 56px);
-  background: #ffffff; 
+  background: var(--bg);
 }
 
 .cert-page{
@@ -21,21 +21,21 @@
 .cert-title{
   margin: 0;
   letter-spacing: -0.5px;
-  color: #0f172a;
+  color: var(--text-main);
   font-weight: 900;
   font-size: 40px;
 }
 
 .cert-subtitle{
   margin: 10px 0 22px;
-  color: #64748b !important;
+  color: var(--text-secondary);
   font-weight: 600;
 }
 
 /* ====== GRID: 2 columns ====== */
 .cert-grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* ✅ 2 ta */
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
@@ -52,10 +52,11 @@
   border-radius: 18px;
   overflow: hidden;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(15, 23, 42, 0.06);
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+
   transition: transform 0.28s ease, box-shadow 0.28s ease;
   position: relative;
   outline: none;
@@ -63,7 +64,12 @@
 
 .cert-card:hover{
   transform: translateY(-8px);
+  /* darkda ham kuchliroq ko‘rinishi uchun */
   box-shadow: 0 22px 46px rgba(15, 23, 42, 0.14);
+}
+
+.dark .cert-card:hover{
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.45);
 }
 
 /* VERIFIED BADGE */
@@ -72,11 +78,14 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
+
+  background: linear-gradient(135deg, #6366f1, var(--primary));
   color: #fff;
+
   font-size: 11px;
   padding: 5px 12px;
   border-radius: 999px;
+
   opacity: 0;
   transform: translateY(-6px);
   transition: 0.25s ease;
@@ -94,7 +103,7 @@
 
 .cert-img{
   width: 100%;
-  height: 260px;          /* ✅ 2 column layoutda chiroyliroq */
+  height: 260px;
   object-fit: cover;
   display: block;
   transition: transform 0.45s ease;
@@ -119,12 +128,12 @@
   margin: 0 0 8px;
   font-weight: 900;
   font-size: 18px;
-  color: #0f172a;
+  color: var(--text-main);
 }
 
 .cert-meta{
   font-size: 14px;
-  color: #64748b;
+  color: var(--text-secondary);
   font-weight: 600;
 }
 
@@ -132,8 +141,11 @@
 .cert-modal{
   position: fixed;
   inset: 0;
+
+  /* light va darkda ham yaxshi: overlay */
   background: rgba(15, 23, 42, 0.86);
   backdrop-filter: blur(8px);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,11 +177,13 @@
   right: 10px;
   width: 42px;
   height: 42px;
-  border: none;
+  border: 1px solid var(--border);
   border-radius: 999px;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.92);
-  color: #0f172a;
+
+  background: var(--card-bg);
+  color: var(--text-main);
+
   font-size: 18px;
   font-weight: 900;
   display: grid;
@@ -179,7 +193,7 @@
 
 .cert-close:hover{
   transform: scale(1.06);
-  background: #fff;
+  background: var(--surface);
 }
 
 /* ====== ANIMATIONS ====== */

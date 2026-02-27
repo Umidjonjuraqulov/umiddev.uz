@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next"; // 👈 Hookni import qilish
 import cert1 from "../assets/hackerrank.PNG";
 import cert2 from "../assets/kopirayting.png";
 import cert3 from "../assets/umid42.png";
+import cert4 from "../assets/algorthm.png"
+import cert5 from "../assets/olimpiada.png"
 import "../styles/cert.css";
 
 const Certificates = () => {
@@ -10,7 +12,7 @@ const Certificates = () => {
   const [selected, setSelected] = useState(null);
 
   // Rasmlarni massivga tartib bilan joylashtiramiz
-  const certImages = [cert1, cert2, cert3];
+  const certImages = [cert1, cert2, cert3, cert4, cert5];
 
   // JSON dan obyektlar massivini olamiz
   const certItems = t("certificates.items", { returnObjects: true });

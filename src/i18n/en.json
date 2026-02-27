@@ -1,11 +1,11 @@
 {
   "about": {
     "title": "About Me",
-    "subtitle": "Get to know more about me, my background, and skills.",
+    "subtitle": "Learn more about me, my background, and my skills.",
     "name": "Umidjon Juraqulov",
-    "desc1": "I am a software developer focused on building modern web applications using React, FastAPI, and AI technologies.",
-    "desc2": "My goal is to combine software engineering with AI and business to create innovative digital products.",
-    "exp": "Years Experience",
+    "desc1": "I am a developer specializing in building modern, scalable, and efficient web applications using React, FastAPI, and Django technologies. Designing frontend and backend architectures, developing RESTful APIs, working with databases, and building systems aligned with real business needs are my core areas of focus.",
+    "desc2": "My goal is to combine software engineering with a business-oriented approach to create practical and value-driven products.",
+    "exp": "Years of Experience",
     "projects": "Projects",
     "tech": "Technologies",
     "download": "Download Resume"
@@ -23,7 +23,7 @@
     "items": [
       {
         "title": "Secondary School",
-        "year": "2019",
+        "year": "2009 — 2019",
         "desc": "Focused on Mathematics with strong performance."
       },
       {
@@ -39,23 +39,33 @@
     ]
   },
   "certificates": {
-    "title": "My Certifications",
-    "subtitle": "Verified achievements in development and AI",
+    "title": "My Certificates",
+    "subtitle": "Verified achievements in programming and teaching",
     "items": [
       {
         "title": "Python Specialization",
-        "platform": "Coursera",
-        "year": "2022"
-      },
-      {
-        "title": "Django Framework",
-        "platform": "Udemy",
+        "platform": "HackerRank",
         "year": "2023"
       },
       {
-        "title": "AI Foundations",
-        "platform": "Google",
+        "title": "Copywriting Course",
+        "platform": "EdFix",
         "year": "2024"
+      },
+      {
+        "title": "Express Backend",
+        "platform": "42",
+        "year": "2025"
+      },
+      {
+        "title": "Express Algorithms",
+        "platform": "School 42",
+        "year": "2025"
+      },
+      {
+        "title": "Programming Olympiad",
+        "platform": "TATU",
+        "year": "2025"
       }
     ]
   },
@@ -64,22 +74,28 @@
     "subtitle": "Professional experience and projects.",
     "items": [
       {
-        "role": "Frontend Developer",
-        "period": "2023 — Present",
-        "desc": "Building responsive web applications using React and modern UI frameworks.",
-        "tags": ["React", "UI", "Responsive", "SPA"]
+        "role": "Mathematics Teacher",
+        "period": "2023 — 2024",
+        "desc": "Taught algebra, geometry, and logical reasoning. Simplified complex concepts into clear explanations and applied an individual approach to improve students’ academic performance.",
+        "tags": ["Mathematics", "Logical Thinking", "Mentoring", "Analytics"]
+      },
+      {
+        "role": "Full Stack Developer",
+        "period": "2024 — 2025",
+        "desc": "Developed modern and responsive user interfaces using React, while designing backend architecture with Django and FastAPI, including REST API development. Worked with databases and optimized system architecture.",
+        "tags": ["Bootstrap", "Django", "FastAPI", "PostgreSQL"]
       },
       {
         "role": "Backend Developer",
-        "period": "2022 — 2023",
-        "desc": "Developed REST APIs and integrated databases for production systems.",
-        "tags": ["REST API", "DB", "Auth", "Performance"]
+        "period": "2025 — Present",
+        "desc": "Designed and implemented RESTful APIs, introduced authentication and authorization mechanisms, and optimized PostgreSQL database structures. Integrated backend systems into production environments.",
+        "tags": ["REST API", "Auth", "PostgreSQL", "Backend Architecture"]
       },
       {
-        "role": "AI & Blockchain Enthusiast",
-        "period": "2024 — Present",
-        "desc": "Exploring smart contracts, Web3 technologies and AI integration.",
-        "tags": ["Web3", "Smart Contracts", "AI", "Research"]
+        "role": "Odoo Intern",
+        "period": "2025 — Present",
+        "desc": "Worked with Odoo modules, automated business processes, and explored ERP system capabilities, applying them in practical projects.",
+        "tags": ["Odoo", "ERP", "Customization", "Business Logic"]
       }
     ]
   }

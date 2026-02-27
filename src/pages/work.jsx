@@ -1,15 +1,16 @@
 import React from "react";
 import { useTranslation } from "react-i18next"; // 👈 i18n import
+import school18 from "../assets/school_18.png"
 import feLogo from "../assets/raccoons_logo.png";
-import beLogo from "../assets/raccoons_logo.png";
-import aiLogo from "../assets/raccoons_logo.png";
+import beLogo from "../assets/venons.png";
+import aiLogo from "../assets/meros.png";
 import "../styles/work.css";
 
 const Work = () => {
   const { t } = useTranslation();
 
   // Rasmlar tartibini JSON dagi items bilan moslaymiz
-  const logos = [feLogo, beLogo, aiLogo];
+  const logos = [school18, feLogo, beLogo, aiLogo];
 
   // JSON dagi massivni olamiz
   const workItems = t("work.items", { returnObjects: true });

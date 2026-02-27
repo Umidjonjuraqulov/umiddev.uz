@@ -2,7 +2,7 @@
 .edu-section{
   width: 100%;
   min-height: calc(100vh - 56px);
-  background: #ffffff; /* oq fon */
+  background: var(--bg);
 }
 
 .edu-page{
@@ -15,32 +15,33 @@
   font-weight: 900;
   font-size: 40px;
   letter-spacing: -0.6px;
-  color: #0f172a;
+  color: var(--text-main);
 }
 
 .edu-subtitle{
   margin: 10px 0 22px;
   max-width: 640px;
-  color: #64748b;
+  color: var(--text-secondary);
   font-weight: 600;
 }
 
 /* Card wrapper */
 .edu-card{
-  background: rgba(255,255,255,0.9);
-  border: 1px solid rgba(15,23,42,0.06);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   border-radius: 18px;
-  box-shadow: 0 10px 28px rgba(15,23,42,0.08);
+  box-shadow: var(--shadow);
   overflow: hidden;
 }
 
 /* Row */
 .edu-row{
   display: grid;
-  grid-template-columns: 92px 1fr;
+  grid-template-columns: 112px 1fr;
   gap: 18px;
   padding: 18px;
-  border-bottom: 1px solid rgba(15,23,42,0.06);
+  border-bottom: 1px solid var(--border);
+  align-items: center;
 }
 
 .edu-row:last-child{
@@ -51,16 +52,18 @@
 .edu-left{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding-top: 2px;
+  align-items: center;
 }
 
+/* Logo box */
 .edu-logo-wrap{
   width: 112px;
   height: 112px;
   border-radius: 16px;
-  background: rgba(79,70,229,0.08);
-  border: 1px solid rgba(79,70,229,0.14);
+
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-soft-2);
+
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -83,15 +86,15 @@
 .edu-item-title{
   margin: 0;
   font-weight: 900;
-  color: #0f172a;
+  color: var(--text-main);
   font-size: 18px;
 }
 
 .edu-year{
   font-size: 13px;
   font-weight: 700;
-  color: #4f46e5;
-  background: rgba(79,70,229,0.10);
+  color: var(--primary);
+  background: var(--primary-soft);
   padding: 4px 10px;
   border-radius: 999px;
   white-space: nowrap;
@@ -99,14 +102,14 @@
 
 .edu-desc{
   margin: 10px 0 0;
-  color: #475569;
+  color: var(--text-secondary);
   font-weight: 600;
   line-height: 1.55;
 }
 
-/* Hover (yengil) */
+/* Hover */
 .edu-row:hover{
-  background: rgba(2, 6, 23, 0.02);
+  background: var(--surface);
 }
 
 /* Mobile */

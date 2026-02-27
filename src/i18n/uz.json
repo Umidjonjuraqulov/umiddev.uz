@@ -3,8 +3,8 @@
     "title": "Men haqimda",
     "subtitle": "Men, mening o'tmishim va ko'nikmalarim haqida ko'proq biling.",
     "name": "Umidjon Juraqulov",
-    "desc1": "Men React, FastAPI va AI texnologiyalaridan foydalangan holda zamonaviy veb-ilovalarni yaratishga e'tibor qaratgan dasturchiman.",
-    "desc2": "Mening maqsadim dasturiy muhandislikni AI va biznes bilan birlashtirib, innovatsion mahsulotlar yaratish.",
+    "desc1": "Men React, FastAPI va Django texnologiyalaridan foydalangan holda zamonaviy, kengaytiriladigan va samarali veb-ilovalar yaratishga ixtisoslashgan dasturchiman.Frontend va backend arxitekturasini to‘g‘ri loyihalash, RESTful API yaratish, ma’lumotlar bazasi bilan ishlash hamda real biznes ehtiyojlariga mos tizimlar ishlab chiqish mening asosiy yo‘nalishim hisoblanadi.",
+    "desc2": "Mening maqsadim — dasturiy muhandislikni biznes yondashuvi bilan birlashtirib, amaliy va qiymat beradigan mahsulotlar yaratish.",
     "exp": "Yillik tajriba",
     "projects": "Loyihalar",
     "tech": "Texnologiyalar",
@@ -22,7 +22,7 @@
     "items": [
       {
         "title": "18-umumiy o'rta ta'lim maktabi",
-        "year": "2019",
+        "year": "2009 — 2019",
         "desc": "Matematika faniga ixtisoslashgan va yuqori natijalar."
       },
       {
@@ -39,22 +39,32 @@
   },
   "certificates": {
     "title": "Mening sertifikatlarim",
-    "subtitle": "Dasturlash va AI yo'nalishidagi tasdiqlangan yutuqlar",
+    "subtitle": "Dasturlash va O'qituvchilik yo'nalishidagi tasdiqlangan yutuqlar",
     "items": [
       {
         "title": "Python ixtisoslashuvi",
-        "platform": "Coursera",
-        "year": "2022"
-      },
-      {
-        "title": "Django Framework",
-        "platform": "Udemy",
+        "platform": "RackerRank",
         "year": "2023"
       },
       {
-        "title": "AI asoslari",
-        "platform": "Google",
+        "title": "Kopirayting kursi",
+        "platform": "EdFix",
         "year": "2024"
+      },
+      {
+        "title": "Express Backend",
+        "platform": "42",
+        "year": "2025"
+      },
+      {
+        "title": "Express Algorithm",
+        "platform": "School 42",
+        "year": "2025"
+      },
+      {
+        "title": "Dasturlash olimpiadasi",
+        "platform": "TATU",
+        "year": "2025"
       }
     ]
   },
@@ -63,22 +73,28 @@
     "subtitle": "Professional tajriba va loyihalar.",
     "items": [
       {
-        "role": "Frontend dasturchi",
-        "period": "2023 — Hozirgi vaqtgacha",
-        "desc": "React va zamonaviy UI freymvorklari yordamida moslashuvchan veb-ilovalarni yaratish.",
-        "tags": ["React", "UI", "Moslashuvchan", "SPA"]
+        "role": "Matematika o‘qituvchisi",
+        "period": "2023 — 2024",
+        "desc": "O‘quvchilarga algebra, geometriya va mantiqiy fikrlash asoslarini o‘rgatish. Murakkab mavzularni sodda va tushunarli usulda yetkazish hamda individual yondashuv orqali o‘quvchilarning natijalarini yaxshilash.",
+        "tags": ["Matematika", "Mantiqiy fikrlash", "Mentorlik", "Tahlil"]
+      },
+      {
+        "role": "Full Stack dasturchi",
+        "period": "2024 — 2025",
+        "desc": "React yordamida zamonaviy va responsiv foydalanuvchi interfeyslarini ishlab chiqish hamda Django va FastAPI asosida backend qismini loyihalash va REST API yaratish. Ma'lumotlar bazasi bilan ishlash va tizim arxitekturasini optimallashtirish.",
+        "tags": ["Bootstrap", "Django", "FastAPI", "PostgreSQL"]
       },
       {
         "role": "Backend dasturchi",
-        "period": "2022 — 2023",
-        "desc": "REST API-larni ishlab chiqish va ma'lumotlar bazalarini ishlab chiqarish tizimlariga integratsiya qilish.",
-        "tags": ["REST API", "Bazalar", "Auth", "Samaradorlik"]
+        "period": "2025 — Hozirgi vaqtgacha",
+        "desc": "RESTful API ishlab chiqish, autentifikatsiya va avtorizatsiya mexanizmlarini joriy etish hamda PostgreSQL asosida ma'lumotlar bazasi dizayni va optimallashtirish. Backend tizimlarini ishlab chiqarish muhitiga integratsiya qilish.",
+        "tags": ["REST API", "Auth", "PostgreSQL", "Backend Architecture"]
       },
       {
-        "role": "AI va Blockchain ishqibozi",
-        "period": "2024 — Hozirgi vaqtgacha",
-        "desc": "Smart-kontraktlar, Web3 texnologiyalari va AI integratsiyasini o'rganish.",
-        "tags": ["Web3", "Smart Contracts", "AI", "Tadqiqot"]
+        "role": "Odoo amaliyotchi",
+        "period": "2025 — Hozirgi vaqtgacha",
+        "desc": "Odoo platformasida modullar bilan ishlash, biznes jarayonlarini avtomatlashtirish va ERP tizimining funksional imkoniyatlarini o‘rganish hamda amaliy loyihalarda qo‘llash.",
+        "tags": ["Odoo", "ERP", "Customization", "Business Logic"]
       }
     ]
   }
